@@ -23,8 +23,23 @@ global.APIKeys = {
     'https://api-fgmods.ddns.net': 'fg-dylux'
 };
 
+// 🔧 Bot Identity
+global.BOT_NAME = 'AidenBot MD';
+global.OWNER_NAME = 'Oliver Sikanga';
+global.FOOTER = '⚡ Powered by AidenBot';
+global.PREFIX = '.';
+
+// 🔒 Group Settings
+global.WARN_COUNT = 3;
+global.GROUP_LIMIT = 250; // Optional: max group members
+global.AUTO_WELCOME = true; // Enable welcome messages
+
 module.exports = {
-    WARN_COUNT: 3,
+    WARN_COUNT: global.WARN_COUNT,
     APIs: global.APIs,
-    APIKeys: global.APIKeys
+    APIKeys: global.APIKeys,
+    BOT_NAME: global.BOT_NAME,
+    OWNER_NAME: global.OWNER_NAME,
+    FOOTER: global.FOOTER,
+    PREFIX: global.PREFIX
 };
